@@ -35,4 +35,7 @@ python3 --version
 Python 3.10.1
 If there is no response then the newly downloaded copy is not being used. Most often this is due to the .bash_profile not being updated correctly. Try logging out and back in again. If necessary, repeat the steps above.
 
-If you're using Django
+## Install Django using virtualenv
+### Overview
+Using virtualenv to install Django is recommended on DreamHost Shared and VPS plans since your user doesn't have access to install into shared directories. 
+When you use virtualenv, you create an isolated environment with its own installation directories which your user has full permissions to. This allows you to install a custom version of Python and its different packages which is not connected to the global installation on the server. This also solves the issue with permissions when installing software.
