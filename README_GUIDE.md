@@ -39,3 +39,6 @@ If there is no response then the newly downloaded copy is not being used. Most o
 ### Overview
 Using virtualenv to install Django is recommended on DreamHost Shared and VPS plans since your user doesn't have access to install into shared directories. 
 When you use virtualenv, you create an isolated environment with its own installation directories which your user has full permissions to. This allows you to install a custom version of Python and its different packages which is not connected to the global installation on the server. This also solves the issue with permissions when installing software.
+
+### Create and activate your virtual environment.
+Link to the original article: https://help.dreamhost.com/hc/en-us/articles/115000695551-Installing-and-using-Python-s-virtualenv-using-Python-3
