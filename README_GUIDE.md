@@ -1,5 +1,13 @@
 # Installing a Custom Version of Python 3
 
+## Create a website on Dreamhost and an SSH user.
+Got o Website/Manage Websites/.
+Add a new website button on the top right side.
+Add the domain registered with dreamhost or anywhere else it without www (we will change the DNS servers late). It might take a while.
+Select Shared Server.
+Go to Website/SFTP Users & Files/.
+
+
 ## Overview
 
 Python 3 is available on Shared, VPS, and Dedicated Servers. However, if you wish to use a specific version, you can install it locally under your Shell user by following the steps outlined in this article.
