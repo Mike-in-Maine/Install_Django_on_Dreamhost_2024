@@ -12,6 +12,14 @@ Select Shared Server.
 
 Go to Website/SFTP Users & Files/.
 
+Create a New User (johnny). Select a name (johnny), server (shared), password you can remember (99beers99), turn on SSH and leave it on bin/bash.
+
+Go back to: Website/Manage Websites/ and select your website and click on Manage
+
+Go to Website/Manage your site/Login Info
+
+To change the user associated with this website (doesnt have to have a domain attached to it yet), activate Secure SSH access. This might take a while. Once over, you will have a new button available: Switch Username/Switch User. Select (johnny on xyzserver-abc) user from the drop down menu. Save Changes. This might take a while.
+
 
 ## Overview
 
