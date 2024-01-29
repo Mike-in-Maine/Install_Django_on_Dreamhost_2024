@@ -1,6 +1,7 @@
 # Installing a Custom Version of Python 3
 
-## Create a website on Dreamhost and an SSH user.
+## Setup Dreamhost part.
+### Create a website on Dreamhost and an SSH user. (you can transfer a domain to it later)
 
 Got o Website/Manage Websites/.
 
