@@ -1,5 +1,6 @@
 # Installing a Custom Version of Python 3
 
+### Special thanx to Sats (not sure if that the real name) from his channel SATSifaction https://www.youtube.com/@SATSifaction great guides there including this guide which comes pretty close to what we do here. https://www.youtube.com/watch?v=hYMTvK5MpQI&t=1158s
 ## Setup Dreamhost part.
 Why is this so complicated? Because Dreamhost is not designed to host Python or Java apps. It is a php-friendly server to host word press websites for beginner programmers and weekend-warriors. Thats it. But with the right tweaking, you can host anything on it. Their documentation is scarce, incomplete and sometimes completely misleading (on purpose???). Good luck contacting their customer support. They are nice, but they will not help. It is way too technical.
 So why should I bother with Dreamhost? Because Dreamhost is the ceapest shared server you can find in the world. You can literally host 100 websites for $12 a month.
