@@ -8,11 +8,11 @@ Ready? Let's get on with it!
 
 ### STEP1: Create a website on Dreamhost and an SSH user. (you can transfer a domain to it later)
 
-Got o Website/Manage Websites/.
+Got to Website/Manage Websites/.
 
 Add a new website button on the top right side.
 
-Add the domain registered with dreamhost or anywhere else it without www (we will change the DNS servers late). It might take a while.
+Add the domain registered with dreamhost or anywhere else it without www (we will change the DNS servers late). We will use johnnybeer.com for demonstration purposes. It might take a while.
 
 Select Shared Server.
 
@@ -33,13 +33,84 @@ What is the IP address of the website? you can find it by going to : Website/Man
 
 The SSH Requires a user and password which are the ones you created:
 
-Server: IP you found on previous step
+Server: IP you found on previous step (202.202.202.202 for demonstration purposes)
 User: johnny
 Pass: 99beer99
 
 You are in. If it gives you any problems its because on Bitwise you actually have to select from the menu below Username that this connection will require a password otherwise it will not connect at all.
 
 ### STEP3: 
+you should see something like this:
+[server-name]$
+
+Type: hostname
+Result: [server-name]$ (no you cannot change it it is your shared server).
+
+Type: hostname -I
+Result: it will give you all the IP addresses for all the shared websites you host on this server. If you look closely there is your ip too 202.202.202.202 along with its IPv6 version.
+
+Type: ls
+Result: Maildir johnnybeer.com logs
+
+Type: cd johnnybeer.com
+Type: virtualenv venv -p python3
+
+This should create a virtual environment in your base directory
+
+Type: ls
+Result: favicon.gif  favicon.ico  venv
+
+The virtual environment has been installed. Lets activate it:
+
+Type: source venv/bin/activate
+Result: (venv) [server-name]$
+
+This activates the virtual environment and now we can start doing stuff in python
+
+Lets install djsngo.
+
+Type: pip install django
+
+Lets install gunicorn
+
+Type: pip install gunicorn
+
+Lets create out django project. We will call it johnny
+You should be in the same directory where venv is.
+
+Type: python3 venv/bin/django-admin startproject johnny
+
+Type: ls
+favicon.gif  favicon.ico  johnny  venv
+
+As you can see we have a new folder with the project we just created called johnny. Cool.
+
+Type: cd johnny
+Type: ls
+Result: johnny  manage.py
+You are inside the project folder where manage.py is. This is where the sqlite will go.
+
+Type: cd johnny
+You should be in this directory: __init__.py  asgi.py  settings.py  urls.py  wsgi.py
+
+Lets change our settings.py file.
+
+Type: nano settings.py
+Move with arrows only since your mouse wont work. Carefull: any mistyped character in this file will break things.
+Change the following:
+
+Change these lines:
+DEBUG = False (capital F)
+ALLOWED_HOSTS ['202.202.202.202' www.johnnybeer.com']
+
+Add this line:
+STATIC_ROOT = '/home/johnny/johnnybeer.com/public/static/'
+
+Save the settings.py document by pressing CTRL+x then say yes and it will be saved.
+
+
+
+
 
 ## Overview
 
