@@ -1,7 +1,7 @@
 # Installing a Custom Version of Python 3
 
 ## Setup Dreamhost part.
-### Create a website on Dreamhost and an SSH user. (you can transfer a domain to it later)
+### STEP1: Create a website on Dreamhost and an SSH user. (you can transfer a domain to it later)
 
 Got o Website/Manage Websites/.
 
@@ -13,14 +13,28 @@ Select Shared Server.
 
 Go to Website/SFTP Users & Files/.
 
-Create a New User (johnny). Select a name (johnny), server (shared), password you can remember (99beers99), turn on SSH and leave it on bin/bash.
+Create a New User (we will use johnny for demonstration purposes). Select a name (johnny), server (shared), password you can remember (99beers99 for demonstration purposes), turn on SSH and leave it on bin/bash.
 
 Go back to: Website/Manage Websites/ and select your website and click on Manage
 
 Go to Website/Manage your site/Login Info
 
-To change the user associated with this website (doesnt have to have a domain attached to it yet), activate Secure SSH access. This might take a while. Once over, you will have a new button available: Switch Username/Switch User. Select (johnny on xyzserver-abc) user from the drop down menu. Save Changes. This might take a while.
+To change the user associated with this website (doesn't have to have a domain attached to it yet), activate Secure SSH access. This might take a while. Once over, you will have a new button available: Switch Username/Switch User. Select (johnny on xyzserver-abc) user from the drop down menu. Save Changes. This might take a while.
 
+SSH user and website are now addedd to Dreamhost and you can log in via SSH.
+
+### STEP2: Log into the server via SSH. 
+What is the IP address of the website? you can find it by going to : Website/Manage Websites/Website/Manage your site/Manage. An FTP-like window will open with folders. The URL contains an IP address. Thats the one. Copy it and paste it into any SSH app like Putty or Bitwise SSH Client.
+
+The SSH Requires a user and password which are the ones you created:
+
+Server: IP you found on previous step
+User: johnny
+Pass: 99beer99
+
+You are in. If it gives you any problems its because on Bitwise you actually have to select from the menu below Username that this connection will require a password otherwise it will not connect at all.
+
+### STEP3: 
 
 ## Overview
 
