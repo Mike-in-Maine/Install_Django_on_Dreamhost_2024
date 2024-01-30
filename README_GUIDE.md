@@ -43,7 +43,7 @@ You are in. If it gives you any problems its because on Bitwise you actually hav
 you should see something like this:
 [server-name]$
 
-Type: hostname
+Type: <pre lang="no-highlight"><code>```hostname```
 Result: [server-name]$ (no you cannot change it it is your shared server).
 
 Type: hostname -I
