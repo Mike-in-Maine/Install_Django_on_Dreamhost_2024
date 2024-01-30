@@ -54,8 +54,8 @@ project/
 | | |-- login.html
 | |-- models.py
 | |-- views.py
-|-- config/
-<bold>| |-- settings.py</bold>
+|-- config/ <------------- Navigate here
+| |-- settings.py
 | |-- urls.py
 |-- db/
 | |-- database.sql
