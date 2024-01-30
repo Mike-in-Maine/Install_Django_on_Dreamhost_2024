@@ -46,6 +46,21 @@ you should see something like this:
 
 Type: <pre lang="no-highlight"><code>```hostname```</code></pre>
 Result: [server-name]$ (no you cannot change it it is your shared server).
+<pre lang="no-highlight"><code>
+project/
+|-- app/
+| |-- templates/
+| | |-- home.html
+| | |-- login.html
+| |-- models.py
+| |-- views.py
+|-- config/
+| |-- settings.py
+| |-- urls.py
+|-- db/
+| |-- database.sql
+|-- README.md
+</code></pre>
 
 Type: hostname -I
 Result: it will give you all the IP addresses for all the shared websites you host on this server. If you look closely there is your ip too 202.202.202.202 along with its IPv6 version.
