@@ -101,12 +101,32 @@ Change the following:
 
 Change these lines:
 DEBUG = False (capital F)
-ALLOWED_HOSTS ['202.202.202.202' www.johnnybeer.com']
+ALLOWED_HOSTS ['202.202.202.202', 'www.johnnybeer.com']
 
 Add this line:
 STATIC_ROOT = '/home/johnny/johnnybeer.com/public/static/'
 
-Save the settings.py document by pressing CTRL+x then say yes and it will be saved.
+Save the settings.py document by pressing CTRL+x then press Y and ENTER and it will be saved.
+
+Lets create a public folder that will contain all our static files like pictures...
+
+Go to root directory by typing cd
+
+you are here: favicon.gif  favicon.ico  johnny  venv
+
+Type: mkdir public
+Type: ls
+Result: favicon.gif  favicon.ico  johnny  public venv
+
+Type: mkdir public/static
+This will create a static folder inside the public folder. Dreamhost needs the public folder.
+
+NOw make sure you are in this directory: johnny  manage.py
+
+Type: python3 manage.py collectstatic
+
+You should see something like: 125 static files copied to '/home/johnny/johnnybeer.com/public/static'.
+We hav now copied the necessary files to the static frolder inside public folder.
 
 
 
