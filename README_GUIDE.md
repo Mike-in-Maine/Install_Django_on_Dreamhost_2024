@@ -34,8 +34,8 @@ What is the IP address of the website? you can find it by going to : Website/Man
 The SSH Requires a user and password which are the ones you created:
 
 Server: IP you found on previous step (202.202.202.202 for demonstration purposes)
-User: johnny
-Pass: 99beer99
+* User: johnny
+* Pass: 99beer99
 
 You are in. If it gives you any problems its because on Bitwise you actually have to select from the menu below Username that this connection will require a password otherwise it will not connect at all.
 
@@ -43,7 +43,7 @@ You are in. If it gives you any problems its because on Bitwise you actually hav
 you should see something like this:
 [server-name]$
 
-Type: <pre lang="no-highlight"><code>```hostname```</code>
+Type: <pre lang="no-highlight"><code>```hostname```</code></pre>
 Result: [server-name]$ (no you cannot change it it is your shared server).
 
 Type: hostname -I
