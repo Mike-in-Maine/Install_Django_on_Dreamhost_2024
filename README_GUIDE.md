@@ -32,7 +32,6 @@ SSH user and website are now addedd to Dreamhost and you can log in via SSH.
 What is the IP address of the website? you can find it by going to : Website/Manage Websites/Website/Manage your site/Manage. An FTP-like window will open with folders. The URL contains an IP address. Thats the one. Copy it and paste it into any SSH app like Putty or Bitwise SSH Client.
 
 The SSH Requires a user and password which are the ones you created:
-<span style="color: red;">This text will be red</span>
 
 Server: IP you found on previous step (202.202.202.202 for demonstration purposes)
 * User: johnny
@@ -42,7 +41,8 @@ You are in. If it gives you any problems its because on Bitwise you actually hav
 
 ### STEP3: 
 you should see something like this:
-[server-name]$
+<pre lang="no-highlight"><code>```[server-name]$```</code></pre>
+
 
 Type: <pre lang="no-highlight"><code>```hostname```</code></pre>
 Result: [server-name]$ (no you cannot change it it is your shared server).
