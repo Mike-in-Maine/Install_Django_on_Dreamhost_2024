@@ -55,7 +55,7 @@ project/
 | |-- models.py
 | |-- views.py
 |-- config/
-**bold**| |-- settings.py**bold**
+<bold>| |-- settings.py</bold>
 | |-- urls.py
 |-- db/
 | |-- database.sql
