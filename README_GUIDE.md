@@ -41,7 +41,7 @@ You are in. If it gives you any problems its because on Bitwise you actually hav
 
 ### STEP3: 
 you should see something like this:
-<pre lang="no-highlight"><code>```[server-name]$```</code></pre>
+<pre lang="no-highlight"><code>[server-name]$</code></pre>
 
 
 Type: <pre lang="no-highlight"><code>```hostname```</code></pre>
