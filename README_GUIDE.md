@@ -1,5 +1,5 @@
 # Installing a Custom Version of Python 3
-NO LONGER WORKING DREAMHOST DISCONTINUED NGINX on shared servers.
+NO LONGER WORKING DREAMHOST DISCONTINUED NGINX on shared servers. 12/2023
 
 ### Special thanx to Sats (not sure if that the real name) from his channel SATSifaction https://www.youtube.com/@SATSifaction great guides there including this guide which comes pretty close to what we do here. https://www.youtube.com/watch?v=hYMTvK5MpQI&t=1158s
 ## Setup Dreamhost part.
